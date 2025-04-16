@@ -168,7 +168,7 @@ function carregarProdutosPorCategoria() {
             <td>R$ ${produto.preco.toFixed(2)}</td>
             <td>${produto.quantidadeMinima}</td>
             <td>
-                <div style="display: flex; align-items: center; gap: 5px;">
+                <div class="quantidade-container">
                     <button type="button" onclick="alterarQuantidade('${categoria}', ${index}, -${produto.quantidadeMinima})" ${produto.status === "Indisponível" ? "disabled" : ""}>–</button>
                     <span id="quantidade-${categoria}-${index}">0</span>
                     <button type="button" onclick="alterarQuantidade('${categoria}', ${index}, ${produto.quantidadeMinima})" ${produto.status === "Indisponível" ? "disabled" : ""}>+</button>
