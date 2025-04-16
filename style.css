@@ -113,6 +113,13 @@ input[type="number"] {
     width: 80px; /* Diminui a largura para dar mais espaço para o nome do produto */
 }
 
+.quantidade-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
 /* Ajustando a largura da coluna de produtos para evitar quebras */
 .produto-nome {
     width: auto; /* Deixe a largura do nome do produto ocupar o espaço restante */
